@@ -98,7 +98,7 @@ s.license      = { :type => "MIT", :file => "LICENSE" }
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
-    s.resources = ["TALPlayerSDK.framework"]
+#s.resources = ["TALPlayerSDK.framework"]
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -125,6 +125,7 @@ s.license      = { :type => "MIT", :file => "LICENSE" }
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
+  s.vendored_frameworks = "TALPlayerSDK.framework"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
