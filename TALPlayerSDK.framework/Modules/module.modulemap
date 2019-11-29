@@ -1,6 +1,0 @@
-framework module TALPlayerSDK {
-  umbrella header "TALPlayerSDK.h"
-
-  export *
-  module * { export * }
-}

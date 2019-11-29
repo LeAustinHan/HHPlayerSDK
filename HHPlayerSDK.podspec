@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHPlayerSDK"
-  s.version      = "1.0.4"
+  s.version      = "1.0.5"
   s.summary      = "test HHPlayerSDK."
 
   # This description is used to generate tags and improve search results.
@@ -94,7 +94,7 @@ s.license      = { :type => "MIT", :file => "LICENSE" }
   #  Not including the public_header_files will make all headers public.
   #
 
-#s.source_files  = "Classes", "Classes/**/*.{h,m}"
+s.source_files  = "HHPlayerSDK/*.{h,m}", "HHPlayerSDK/**/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -125,7 +125,7 @@ s.license      = { :type => "MIT", :file => "LICENSE" }
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
-  s.vendored_frameworks = "TALPlayerSDK.framework"
+  #s.vendored_frameworks = "TALPlayerSDK.framework"
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
