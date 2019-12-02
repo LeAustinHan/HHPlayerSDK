@@ -44,4 +44,17 @@ static LBOCHappyMapManager *_singleInstance = nil;
     [MKMapItem openMapsWithItems:items launchOptions:options];
 }
 
+- (void)shareLocationToBaiDuMapAppWithTarget:(CLLocation *)targetLocation andTargetLocationInfo:(NSString *)targetLocationInfo{//打开系统地图App
+    NSString *url = [[NSString stringWithFormat:@"baidumap://map/direction?origin=latlng:%f,%f|name:我的位置&destination=latlng:%f,%f|name:%@&mode=driving", [[LBOCHappyLocationManager sharedInstance] getLocation].coordinate.latitude, [[LBOCHappyLocationManager sharedInstance] getLocation].coordinate.longitude,targetLocation.coordinate.latitude, targetLocation.coordinate.longitude, targetLocationInfo] stringByAddingPercentEscapesUsingEncoding: NSUTF8StringEncoding];
+    if ([[UIApplication sharedApplication] canOpenURL:[NSURL URLWithString: @"baidumap://"]]){
+        if ([[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]] == NO){
+            
+        }
+
+        } else {
+     
+            //[AutoAlertView ShowMessage:@"没有安装百度地图"];
+    }
+}
+
 @end

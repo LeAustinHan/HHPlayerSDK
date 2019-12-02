@@ -94,7 +94,7 @@ s.license      = { :type => "MIT", :file => "LICENSE" }
   #  Not including the public_header_files will make all headers public.
   #
 
-s.source_files  = "HHPlayerSDK/*.{h,m}", "HHPlayerSDK/**/*.{h,m}"
+s.source_files  =  "HHPlayerSDKCode/Classes/*.{h,m}"
 #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"

@@ -26,8 +26,23 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (instancetype)sharedInstance;
 
+/**
 
+获取单例
+
+@return 导航到目标位置
+
+*/
 - (void)shareLocationToMapAppWithTarget:(CLLocation *)targetLocation andTargetLocationInfo:(NSString *)targetLocationInfo;
+
+/**
+
+获取单例
+
+@return 导航到目标位置
+
+*/
+- (void)shareLocationToBaiDuMapAppWithTarget:(CLLocation *)targetLocation andTargetLocationInfo:(NSString *)targetLocationInfo;
 
 @end
 
