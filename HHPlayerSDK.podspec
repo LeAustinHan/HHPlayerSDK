@@ -138,5 +138,7 @@ s.source_files  = "HHPlayerSDK/*.{h,m}", "HHPlayerSDK/**/*.{h,m}"
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
+  
+  s.dependency "LBOCTestSDK"
 
 end
