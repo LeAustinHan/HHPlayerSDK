@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHPlayerSDK"
-  s.version      = "1.1.1"
+  s.version      = "1.1.2"
   s.summary      = "test HHPlayerSDK."
 
   # This description is used to generate tags and improve search results.
@@ -68,7 +68,7 @@ s.license      = { :type => "MIT", :file => "LICENSE" }
   #
 
   s.platform     = :ios
-  s.platform     = :ios, "7.0"
+  s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "5.0"
