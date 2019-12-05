@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHPlayerSDK"
-  s.version      = "1.1.0"
+  s.version      = "1.1.1"
   s.summary      = "test HHPlayerSDK."
 
   # This description is used to generate tags and improve search results.
@@ -137,7 +137,7 @@ s.source_files  =  "HHPlayerSDKCode/Classes/*.{h,m}"
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  s.dependency "JSONKit", "~> 1.4"
+  #s.dependency "JSONKit", "~> 1.4"
   
   #s.dependency "LBOCTestSDK"
   
