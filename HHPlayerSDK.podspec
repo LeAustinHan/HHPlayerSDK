@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHPlayerSDK"
-  s.version      = "1.0.5"
+  s.version      = "1.1.0"
   s.summary      = "test HHPlayerSDK."
 
   # This description is used to generate tags and improve search results.
@@ -137,8 +137,20 @@ s.source_files  =  "HHPlayerSDKCode/Classes/*.{h,m}"
   # s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency "JSONKit", "~> 1.4"
   
-  s.dependency "LBOCTestSDK"
+  #s.dependency "LBOCTestSDK"
+  
+  s.dependency 'BaiduMapKit'
+  
+  s.frameworks   = "CoreLocation", "CoreTelephony", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration", "BaiduMapAPI_Base", "BaiduMapAPI_Cloud", "BaiduMapAPI_Location", "BaiduMapAPI_Map", "BaiduMapAPI_Radar", "BaiduMapAPI_Search", "BaiduMapAPI_Utils"
+  s.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
+
+  s.pod_target_xcconfig = {
+      'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
+      'LIBRARY_SEARCH_PATHS'     => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit/thirdlibs',
+      'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -lObjC',
+      'ENABLE_BITCODE'           => 'NO'
+  }
 
 end
