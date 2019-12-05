@@ -143,7 +143,7 @@ s.source_files  =  "HHPlayerSDKCode/Classes/*.{h,m}"
   
   s.dependency 'BaiduMapKit'
   
-  s.frameworks   = "CoreLocation", "CoreTelephony", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration", "BaiduMapAPI_Base", "BaiduMapAPI_Cloud", "BaiduMapAPI_Location", "BaiduMapAPI_Map", "BaiduMapAPI_Radar", "BaiduMapAPI_Search", "BaiduMapAPI_Utils"
+  s.frameworks   = "CoreLocation", "CoreTelephony", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration",
   s.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
 
   s.pod_target_xcconfig = {
