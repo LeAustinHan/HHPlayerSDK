@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "HHPlayerSDK"
-  s.version      = "1.1.3"
+  s.version      = "1.1.4"
   s.summary      = "test HHPlayerSDK."
 
   # This description is used to generate tags and improve search results.
@@ -143,7 +143,7 @@ s.source_files  =  "HHPlayerSDKCode/Classes/*.{h,m}"
   
   s.dependency 'BaiduMapKit'
   
-  s.frameworks   = "CoreLocation", "CoreTelephony", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration",
+  s.frameworks   = "CoreLocation", "CoreTelephony", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration"
   s.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
 
   s.pod_target_xcconfig = {
