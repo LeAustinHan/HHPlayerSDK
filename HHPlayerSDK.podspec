@@ -144,7 +144,7 @@ s.source_files  =  "HHPlayerSDKCode/Classes/*.{h,m}"
   s.dependency 'BaiduMapKit'
   
   s.frameworks   = "CoreLocation", "CoreTelephony", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration"
-  s.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
+  s.libraries    = "z", "sqlite3.0", "stdc++.6.0.9"
 
   s.pod_target_xcconfig = {
       'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
